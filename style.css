@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* outline: 1px solid gray; */
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #D1D1D1;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Bruno Ace SC", sans-serif;
+    line-height: 1.5;
+}
+
+/* font */
+
+.h1 {
+    font-size: 128px;
+}
+
+.h2 {
+    font-size: 40px;
+}
+
+.fz-0 {
+    font-size: 64px;
+}
+
+.fz-1 {
+    font-size: 32px;
+}
+
+.fz-2 {
+    font-size: 24px;
+}
+
+.fz-3 {
+    font-size: 20px;
+}
+
+/* layout */
+
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.p-4 {
+    padding: 32px 0;
+}
+
+.p-5 {
+    padding: 40px 0;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-28 {
+    margin-bottom: 28px;
+}
+
+.mb-34 {
+    margin-bottom: 34px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.bg-dark {
+    background-color: #000000;
+}
+
+/* header */
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header li a:hover {
+    transform: rotate(0.5turn);
+}
+
+/* banner */
+
+.banner {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-text {
+    width: 636px;
+    color: #FFFFFF;
+}
+
+.name {
+    color: #00FFA3;
+    display: block;
+    text-align: right;
+}
+
+.banner-btn {
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    color: #000000;
+    padding: 12px 24px;
+}
+
+/* intro */
+
+.introduction {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+    background-size: cover;
+    color: #FFFFFF;
+    padding: 160px 0;
+}
+
+.info-details {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-text {
+    width: 526px;
+}
+
+.sparkles {
+    width: 128px;
+}
+
+
+.info-img {
+    width: 746px;
+}
+
+/* about */
+
+.about {
+    padding: 160px 0;
+}
+
+.about-details {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills {
+    width: 636px;
+    gap: 24px;
+    flex-wrap: wrap;
+    color: #15161D;
+}
+
+.skills li {
+    width: 306px;
+    padding: 16px;
+    border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0px #00000014;
+}
+
+.about-title {
+    width: 526px;
+}
+
+/* contact */
+
+.contact {
+    background: linear-gradient(#050014, #01021E);
+    color: #FFFFFF;
+    padding: 96px 0;
+}
+
+.contact-text {
+    width: 657px;
+    justify-content: space-between;
+}
+
+.contact-img {
+    width: 526px;
+    justify-content: space-between;
+}
+
+.contact-img li {
+    border-radius: 40px;
+    transition: 0.8s;
+}
+
+.contact-img li:hover {
+    box-shadow: 0px 0px 16px 3px #9094FFE5;
+}
+
+/* projects */
+
+.projects {
+    padding: 160px 0;
+}
+
+.project-title {
+    width: 746px;
+    margin-left: auto;
+    margin-bottom: 16px;
+}
+
+.project-content {
+    width: 856px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-text {
+    width: 636px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-btn {
+    width: 185px;
+    padding: 12px 24px;
+    border-radius: 32px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* footer */
+
+.footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    justify-content: center;
+    padding: 40px 0;
+}
